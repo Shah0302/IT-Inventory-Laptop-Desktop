@@ -12,7 +12,7 @@ class ItInventory(models.Model):
     fullname = fields.Char(string='Full Name')
     email = fields.Char(string='Email IDs')
     unit = fields.Char(string='Unit')
-    section = fields.Char(string='Section')
+    section = fields.Char(string='Sections')
     category = fields.Char(string='Category')
     brand_model = fields.Char(string='CPU Brand & Model')
     configuration = fields.Char(string='Configuration')
