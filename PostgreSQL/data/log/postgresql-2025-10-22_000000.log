@@ -1,0 +1,18 @@
+2025-10-22 17:25:32.846 +06 [29408] FATAL:  password authentication failed for user "Tex"
+2025-10-22 17:25:32.846 +06 [29408] DETAIL:  Role "Tex" does not exist.
+	Connection matched pg_hba.conf line 86: "host    all             all             ::1/128                 md5"
+2025-10-22 17:25:57.336 +06 [27268] FATAL:  password authentication failed for user "Tex"
+2025-10-22 17:25:57.336 +06 [27268] DETAIL:  Role "Tex" does not exist.
+	Connection matched pg_hba.conf line 86: "host    all             all             ::1/128                 md5"
+2025-10-22 17:26:39.611 +06 [30432] FATAL:  password authentication failed for user "Tex"
+2025-10-22 17:26:39.611 +06 [30432] DETAIL:  Role "Tex" does not exist.
+	Connection matched pg_hba.conf line 86: "host    all             all             ::1/128                 md5"
+2025-10-22 17:27:03.654 +06 [4960] FATAL:  password authentication failed for user "Tex"
+2025-10-22 17:27:03.654 +06 [4960] DETAIL:  Role "Tex" does not exist.
+	Connection matched pg_hba.conf line 86: "host    all             all             ::1/128                 md5"
+2025-10-22 17:27:11.568 +06 [28984] FATAL:  password authentication failed for user "Tex"
+2025-10-22 17:27:11.568 +06 [28984] DETAIL:  Role "Tex" does not exist.
+	Connection matched pg_hba.conf line 86: "host    all             all             ::1/128                 md5"
+2025-10-22 17:37:46.411 +06 [16944] FATAL:  password authentication failed for user "Tex"
+2025-10-22 17:37:46.411 +06 [16944] DETAIL:  Role "Tex" does not exist.
+	Connection matched pg_hba.conf line 86: "host    all             all             ::1/128                 md5"

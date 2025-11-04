@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_travels_management_form" model="ir.ui.view">
+        <field name="name">travels.management.form</field>
+        <field name="model">travels.management</field>
+        <field name="arch" type="xml">
+            <form string="Travels">
+                <sheet>
+
+
+                    <group col="4" colspan="4" name="order_fields">
+                        <field name="booking_reference" string="booking reference"/>
+                        <field name="no_of_passengers" string="no of passengers"/>
+                        <field string="booking date"
+                               name="booking_date"/>
+                        <field name="state" string="state"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="travels_management_view_tree" model="ir.ui.view">
+        <field name="name">travels.management.tree</field>
+        <field name="model">travels.management</field>
+        <field name="arch" type="xml">
+            <list string="Travels">
+                        <field name="booking_reference" string="booking reference"/>
+                        <field name="no_of_passengers" string="no of passengers"/>
+                        <field string="booking date"
+                               name="booking_date"/>
+                        <field name="state" string="state"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="travels_management_model_action" model="ir.actions.act_window">
+        <field name="name">Travels Management</field>
+        <field name="res_model">travels.management</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Menu Items -->
+    <menuitem id="travels_menu_root" name="Travels Management"/>
+
+    <menuitem id="travels_management_menu_action"
+              name="Booking"
+              parent="travels_menu_root"
+              action="travels_management_model_action"/>
+</odoo>

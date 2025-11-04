@@ -1,0 +1,20 @@
+2025-10-23 11:35:32.377 +06 [18712] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-10-23 11:35:32.380 +06 [20856] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-10-23 11:35:32.380 +06 [6684] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-10-23 11:35:32.380 +06 [28960] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-10-23 11:35:32.380 +06 [13772] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-10-23 11:35:32.380 +06 [27300] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-10-23 11:35:32.380 +06 [14404] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-10-23 12:25:33.993 +06 [7812] LOG:  received fast shutdown request
+2025-10-23 12:25:33.998 +06 [7812] LOG:  aborting any active transactions
+2025-10-23 12:25:33.999 +06 [5984] ERROR:  canceling statement due to user request
+2025-10-23 12:25:34.014 +06 [7812] LOG:  background worker "logical replication launcher" (PID 5984) exited with exit code 1
+2025-10-23 12:25:34.019 +06 [10232] LOG:  shutting down
+2025-10-23 12:25:34.182 +06 [7812] LOG:  database system is shut down

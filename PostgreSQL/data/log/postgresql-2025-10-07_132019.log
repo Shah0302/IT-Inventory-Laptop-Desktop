@@ -1,0 +1,11 @@
+2025-10-07 13:20:19.968 +06 [10480] LOG:  database system was interrupted; last known up at 2025-10-05 11:28:43 +06
+2025-10-07 13:20:33.624 +06 [10480] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-10-07 13:20:33.633 +06 [10480] LOG:  redo starts at 0/89086C0
+2025-10-07 13:20:33.633 +06 [10480] LOG:  invalid record length at 0/89087A8: wanted 24, got 0
+2025-10-07 13:20:33.634 +06 [10480] LOG:  redo done at 0/8908770
+2025-10-07 13:20:34.078 +06 [9628] LOG:  database system is ready to accept connections
+2025-10-07 14:43:40.059 +06 [9628] LOG:  received fast shutdown request
+2025-10-07 14:43:40.065 +06 [9628] LOG:  aborting any active transactions
+2025-10-07 14:43:40.082 +06 [9628] LOG:  background worker "logical replication launcher" (PID 14212) exited with exit code 1
+2025-10-07 14:43:40.087 +06 [6496] LOG:  shutting down
+2025-10-07 14:43:40.268 +06 [9628] LOG:  database system is shut down

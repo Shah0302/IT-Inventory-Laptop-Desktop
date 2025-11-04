@@ -1,0 +1,5 @@
+2025-08-24 11:50:12.270 +06 [10032] LOG:  aborting any active transactions
+2025-08-24 11:50:12.272 +06 [10472] ERROR:  canceling statement due to user request
+2025-08-24 11:50:12.288 +06 [10032] LOG:  background worker "logical replication launcher" (PID 10472) exited with exit code 1
+2025-08-24 11:50:12.294 +06 [8624] LOG:  shutting down
+2025-08-24 11:50:12.431 +06 [10032] LOG:  database system is shut down

@@ -1,0 +1,37 @@
+2025-10-29 10:12:22.750 +06 [27776] ERROR:  could not serialize access due to concurrent update
+2025-10-29 10:12:22.750 +06 [27776] STATEMENT:  
+	            WITH last_cron_progress AS (
+	                SELECT id as progress_id, cron_id, timed_out_counter, done, remaining
+	                FROM ir_cron_progress
+	                WHERE cron_id = 12
+	                ORDER BY id DESC
+	                LIMIT 1
+	            )
+	            SELECT *
+	            FROM ir_cron
+	            LEFT JOIN last_cron_progress lcp ON lcp.cron_id = ir_cron.id
+	            WHERE ir_cron.active = true
+	              AND (nextcall <= (now() at time zone 'UTC')
+	                OR EXISTS (
+	                    SELECT cron_id
+	                    FROM ir_cron_trigger
+	                    WHERE call_at <= (now() at time zone 'UTC')
+	                      AND cron_id = ir_cron.id
+	                )
+	              )
+	              AND id = 12
+	            ORDER BY priority
+	            FOR NO KEY UPDATE SKIP LOCKED
+	        
+2025-10-29 11:01:07.803 +06 [4188] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-10-29 11:01:07.803 +06 [30624] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-10-29 11:01:07.804 +06 [8208] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-10-29 11:01:07.804 +06 [19408] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-10-29 11:01:07.804 +06 [30984] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-10-29 11:01:07.804 +06 [24420] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

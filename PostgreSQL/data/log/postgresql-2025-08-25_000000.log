@@ -1,0 +1,2 @@
+2025-08-25 21:13:00.572 +06 [10580] WARNING:  worker took too long to start; canceled
+2025-08-25 21:19:34.501 +06 [22680] WARNING:  autovacuum worker started without a worker entry

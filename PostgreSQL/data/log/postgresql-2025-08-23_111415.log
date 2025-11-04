@@ -1,0 +1,3 @@
+2025-08-23 11:14:15.535 +06 [9660] LOG:  database system was shut down at 2025-08-23 11:13:40 +06
+2025-08-23 11:14:15.996 +06 [10032] LOG:  database system is ready to accept connections
+2025-08-24 11:50:12.265 +06 [10032] LOG:  received fast shutdown request

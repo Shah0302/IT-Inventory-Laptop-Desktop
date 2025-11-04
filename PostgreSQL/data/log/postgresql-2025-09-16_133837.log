@@ -1,0 +1,8 @@
+2025-09-16 13:38:37.950 +06 [9972] LOG:  database system was shut down at 2025-09-16 13:38:08 +06
+2025-09-16 13:38:38.378 +06 [8476] LOG:  database system is ready to accept connections
+2025-09-16 13:45:26.861 +06 [8476] LOG:  received fast shutdown request
+2025-09-16 13:45:26.866 +06 [8476] LOG:  aborting any active transactions
+2025-09-16 13:45:26.867 +06 [5556] ERROR:  canceling statement due to user request
+2025-09-16 13:45:26.895 +06 [8476] LOG:  background worker "logical replication launcher" (PID 5556) exited with exit code 1
+2025-09-16 13:45:26.900 +06 [9620] LOG:  shutting down
+2025-09-16 13:45:27.021 +06 [8476] LOG:  database system is shut down

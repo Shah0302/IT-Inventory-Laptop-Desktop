@@ -1,0 +1,6 @@
+2025-09-02 16:55:16.169 +06 [9432] LOG:  received fast shutdown request
+2025-09-02 16:55:16.173 +06 [9432] LOG:  aborting any active transactions
+2025-09-02 16:55:16.175 +06 [10768] ERROR:  canceling statement due to user request
+2025-09-02 16:55:16.191 +06 [9432] LOG:  background worker "logical replication launcher" (PID 10768) exited with exit code 1
+2025-09-02 16:55:16.196 +06 [10380] LOG:  shutting down
+2025-09-02 16:55:16.320 +06 [9432] LOG:  database system is shut down
