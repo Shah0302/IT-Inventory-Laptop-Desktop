@@ -1,2 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_it_inventory_user,access_it_inventory_user,model_it_inventory,base.group_user,1,1,1,1
+access_laptop_user,access_laptop_user,model_laptop,base.group_user,1,1,1,1
+access_desktop_user,access_desktop_user,model_desktop,base.group_user,1,1,1,1
+access_attendance_machine_user,access_attendance_machine_user,model_attendance_machine,base.group_user,1,1,1,1

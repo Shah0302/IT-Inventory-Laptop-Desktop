@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Form View -->
+<!--    <record id="view_it_inventory_form" model="ir.ui.view">-->
+<!--        <field name="name">it_inventory.form</field>-->
+<!--        <field name="model">it.inventory</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form string="it">-->
+<!--                <sheet>-->
+
+
+<!--                    <group col="4" colspan="4" name="order_fields">-->
+<!--                        <field name="count"/>-->
+<!--                        <field name="id"/>-->
+<!--                        <field name="serial"/>-->
+<!--                        <field name="no_of_passengers"/>-->
+<!--                        <field name="booking_date"/>-->
+<!--                        <field name="state"/>-->
+<!--                    </group>-->
+<!--                </sheet>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+
+    <!-- Tree View -->
+    <record id="laptop_view_tree" model="ir.ui.view">
+        <field name="name">laptop.tree</field>
+        <field name="model">laptop</field>
+        <field name="arch" type="xml">
+            <list string="laptop" editable="bottom">
+                        <field name="count"/>
+                        <field name="serial"/>
+                        <field name="emp_id"/>
+                        <field name="fullname"/>
+                        <field name="email"/>
+                        <field name="unit"/>
+                        <field name="section"/>
+                        <field name="category"/>
+                        <field name="brand_model"/>
+                        <field name="configuration"/>
+                        <field name="laptop_serial"/>
+                        <field name="laptop_asset"/>
+                        <field name="hostname"/>
+                        <field name="laptop_purchase_date"/>
+<!--                        <field name="cpu_dt"/>-->
+                        <field name="laptop_age"/>
+                        <field name="laptop_purchase_value"/>
+                        <field name="monitor_brand"/>
+                        <field name="m_serial"/>
+                        <field name="m_serial"/>
+                        <field name="moni_purchase_date"/>
+<!--                        <field name="m_dt"/>-->
+                        <field name="m_age"/>
+                        <field name="m_purchase_value"/>
+                        <field name="remarks"/>
+                        <field name="remarks2"/>
+
+            </list>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="laptop_model_action" model="ir.actions.act_window">
+        <field name="name">Laptop</field>
+        <field name="res_model">laptop</field>
+        <field name="view_mode">list,form</field>
+    </record>
+<!--         <menuitem id="it_inventory_menu"-->
+<!--              name="IT Inventory"-->
+<!--    />-->
+
+    <menuitem id="laptop_root"
+              name="Laptop"
+              parent="it_inventory_menu"
+              action="laptop_model_action"
+    />
+
+</odoo>

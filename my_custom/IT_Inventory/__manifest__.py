@@ -8,6 +8,9 @@
 'data': [
         'security/ir.model.access.csv',
         'views/it_inventory_views.xml',
+        'views/laptop_views.xml',
+        'views/desktop_views.xml',
+        'views/attendance_machine_views.xml',
 ],
 'images': [],
 

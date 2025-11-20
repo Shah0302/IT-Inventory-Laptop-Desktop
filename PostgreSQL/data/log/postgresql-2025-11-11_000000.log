@@ -1,0 +1,12 @@
+2025-11-12 04:07:54.586 +06 [27644] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-11-12 04:07:54.587 +06 [1736] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-11-12 04:07:54.587 +06 [7428] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-11-12 04:07:54.587 +06 [12508] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-11-12 04:07:54.588 +06 [9744] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-11-12 04:07:54.588 +06 [19136] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

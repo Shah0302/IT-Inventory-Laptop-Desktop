@@ -73,85 +73,94 @@
         <field name="view_mode">list,form</field>
     </record>
 
-    <!-- Menu Items -->
-    <menuitem id="it_menu_root" name="IT Inventory"/>
-    <menuitem id="it_inventory_menu_lapton"
-              name="Laptop"
-              parent="it_menu_root"
-              action="it_inventory_model_action"
-              sequence = "1"
+
+     <menuitem id="it_inventory_menu"
+              name="IT Inventory"
     />
-    <menuitem id="it_inventory_menu_desktop"
-              name="Desktop"
-              parent="it_menu_root"
-              action="it_inventory_model_action"
-              sequence = "2"
-    />
-    <menuitem id="it_inventory_menu_printer_scanner"
-              name="Printer &amp; Scanner"
-              parent="it_menu_root"
-              action="it_inventory_model_action"
-              sequence = "3"
-    />
- <menuitem id="it_inventory_menu_Wifi"
-              name="Wifi-Uni-Fi"
-              parent="it_menu_root"
-              action="it_inventory_model_action"
-              sequence = "4"
-    />
-    <menuitem id="it_inventory_menu_server"
-              name="Server"
-              parent="it_menu_root"
-              action="it_inventory_model_action"
-              sequence = "5"
-    />
-    <menuitem id="it_inventory_menu_sw,ro"
-              name="Switch &amp; Router"
-              parent="it_menu_root"
-              action="it_inventory_model_action"
-              sequence = "6"
-    />
-    <menuitem id="it_inventory_menu_Att_M"
-              name="Attendance Machine"
-              parent="it_menu_root"
-              action="it_inventory_model_action"
-              sequence = "7"
-    />
-    <menuitem id="it_inventory_menu_PABX"
-              name="PABX &amp; Grand Stream Device"
-              parent="it_menu_root"
-              action="it_inventory_model_action"
-              sequence = "8"
-    />
-    <menuitem id="it_inventory_menu_Projector"
-              name="Projector &amp; Television"
-              parent="it_menu_root"
-              action="it_inventory_model_action"
-              sequence = "9"
-    />
-     <menuitem id="it_inventory_menu_cctv"
-              name="CCTV"
-              parent="it_menu_root"
-              action="it_inventory_model_action"
-              sequence = "10"
-    />
-    />
-     <menuitem id="it_inventory_menu_rack"
-              name="RACK"
-              parent="it_menu_root"
-              action="it_inventory_model_action"
-              sequence = "11"
-    />
-    <menuitem id="it_inventory_menu_online_ups"
-              name="Online UPS"
-              parent="it_menu_root"
-              action="it_inventory_model_action"
-              sequence = "12"
-    />
+
+<!--    <menuitem id="it_menu_root"-->
+<!--              name="All Items"-->
+<!--              parent="it_inventory_menu"-->
+<!--              action="it_inventory_model_action"-->
+<!--    />-->
+
+<!--    <menuitem id="it_inventory_menu_laptop"-->
+<!--              name="Laptop"-->
+<!--              parent="it_inventory_menu"-->
+<!--              action="it_inventory_model_action"-->
+<!--              sequence = "1"-->
+<!--    />-->
+
+<!--    <menuitem id="it_inventory_menu_desktop"-->
+<!--              name="Desktop"-->
+<!--              parent="it_menu_root"-->
+<!--              action="it_inventory_model_action"-->
+<!--              sequence = "2"-->
+<!--    />-->
+<!--    <menuitem id="it_inventory_menu_printer_scanner"-->
+<!--              name="Printer &amp; Scanner"-->
+<!--              parent="it_menu_root"-->
+<!--              action="it_inventory_model_action"-->
+<!--              sequence = "3"-->
+<!--    />-->
+<!-- <menuitem id="it_inventory_menu_Wifi"-->
+<!--              name="Wifi-Uni-Fi"-->
+<!--              parent="it_menu_root"-->
+<!--              action="it_inventory_model_action"-->
+<!--              sequence = "4"-->
+<!--    />-->
+<!--    <menuitem id="it_inventory_menu_server"-->
+<!--              name="Server"-->
+<!--              parent="it_menu_root"-->
+<!--              action="it_inventory_model_action"-->
+<!--              sequence = "5"-->
+<!--    />-->
+<!--    <menuitem id="it_inventory_menu_sw,ro"-->
+<!--              name="Switch &amp; Router"-->
+<!--              parent="it_menu_root"-->
+<!--              action="it_inventory_model_action"-->
+<!--              sequence = "6"-->
+<!--    />-->
+<!--    <menuitem id="it_inventory_menu_Att_M"-->
+<!--              name="Attendance Machine"-->
+<!--              parent="it_menu_root"-->
+<!--              action="it_inventory_model_action"-->
+<!--              sequence = "7"-->
+<!--    />-->
+<!--    <menuitem id="it_inventory_menu_PABX"-->
+<!--              name="PABX &amp; Grand Stream Device"-->
+<!--              parent="it_menu_root"-->
+<!--              action="it_inventory_model_action"-->
+<!--              sequence = "8"-->
+<!--    />-->
+<!--    <menuitem id="it_inventory_menu_Projector"-->
+<!--              name="Projector &amp; Television"-->
+<!--              parent="it_menu_root"-->
+<!--              action="it_inventory_model_action"-->
+<!--              sequence = "9"-->
+<!--    />-->
+<!--     <menuitem id="it_inventory_menu_cctv"-->
+<!--              name="CCTV"-->
+<!--              parent="it_menu_root"-->
+<!--              action="it_inventory_model_action"-->
+<!--              sequence = "10"-->
+<!--    />-->
+<!--    />-->
+<!--     <menuitem id="it_inventory_menu_rack"-->
+<!--              name="RACK"-->
+<!--              parent="it_menu_root"-->
+<!--              action="it_inventory_model_action"-->
+<!--              sequence = "11"-->
+<!--    />-->
+<!--    <menuitem id="it_inventory_menu_online_ups"-->
+<!--              name="Online UPS"-->
+<!--              parent="it_menu_root"-->
+<!--              action="it_inventory_model_action"-->
+<!--              sequence = "12"-->
+<!--    />-->
 
 <!--    <menuitem id="it_inventory_sub_menu_action"-->
 <!--              name="HP"-->
 <!--              parent="it_inventory_menu_action"-->
 <!--              action="it_inventory_model_action"/>-->
 </odoo>
-
