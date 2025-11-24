@@ -5,9 +5,10 @@ from . import desktop
 from . import laptop
 from . import online_ups
 from . import pabx
-from . import printer_scanner
-from . import projector_television
+from . import printer
+from . import projector
 from . import rack
 from . import server
 from . import switch_router
 from . import wifi_unifi
+from.import scanner

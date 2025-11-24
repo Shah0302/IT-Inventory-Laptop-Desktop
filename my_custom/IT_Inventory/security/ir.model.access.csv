@@ -3,3 +3,7 @@ access_it_inventory_user,access_it_inventory_user,model_it_inventory,base.group_
 access_laptop_user,access_laptop_user,model_laptop,base.group_user,1,1,1,1
 access_desktop_user,access_desktop_user,model_desktop,base.group_user,1,1,1,1
 access_attendance_machine_user,access_attendance_machine_user,model_attendance_machine,base.group_user,1,1,1,1
+cctv_machine_user,cctv_machine_user,model_cctv,base.group_user,1,1,1,1
+online_ups_machine_user,online_ups_machine_user,model_online_ups,base.group_user,1,1,1,1
+pabx_machine_user,pabx_machine_user,model_pabx,base.group_user,1,1,1,1
+printer_user,printer_user,model_printer,base.group_user,1,1,1,1

@@ -81,13 +81,13 @@ class Laptop(models.Model):
         ],
         string='Laptop Brand & Model')
     configuration = fields.Char(string='Configuration')
-    laptop_serial= fields.Char(string='CPU Serial')
-    laptop_asset = fields.Char(string='CPU Asset ID')
+    laptop_serial= fields.Char(string='Serial')
+    laptop_asset = fields.Char(string='Asset ID')
     hostname = fields.Char(string='Host Name')
-    laptop_purchase_date = fields.Char(string='CPU Purchase Date')
+    laptop_purchase_date = fields.Char(string='Purchase Date')
     # cpu_dt = fields.Char(string='Today DT')
-    laptop_age = fields.Char(string='CPU Age', compute='_compute_device_age', store=True, readonly=True)
-    laptop_purchase_value = fields.Char(string='CPU Purchase Value')
+    laptop_age = fields.Char(string='Age', compute='_compute_device_age', store=True, readonly=True)
+    laptop_purchase_value = fields.Char(string='Purchase Value')
     monitor_brand = fields.Selection( [
             ('b1', 'HP'),
             ('b2', 'Dell'),

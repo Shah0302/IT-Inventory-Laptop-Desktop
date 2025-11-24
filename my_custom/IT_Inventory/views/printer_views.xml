@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Tree View -->
+    <record id="printer_view_tree" model="ir.ui.view">
+        <field name="name">printer.tree</field>
+        <field name="model">printer</field>
+        <field name="arch" type="xml">
+            <list string="printer" editable="bottom">
+                        <field name="count"/>
+                        <field name="serial"/>
+                        <field name="emp_id"/>
+                        <field name="fullname"/>
+                        <field name="unit"/>
+                        <field name="section"/>
+                        <field name="category"/>
+                        <field name="brand"/>
+                        <field name="model"/>
+                        <field name="configuration"/>
+                        <field name="printer_ip"/>
+                        <field name="printer_serial"/>
+                        <field name="printer_asset"/>
+                        <field name="hostname"/>
+                        <field name="printer_purchase_date"/>
+<!--                        <field name="cpu_dt"/>-->
+                        <field name="printer_age"/>
+                        <field name="printer_purchase_value"/>
+                        <field name="status"/>
+<!--                        <field name="remarks"/>-->
+                        <field name="remarks"/>
+
+            </list>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="printer_model_action" model="ir.actions.act_window">
+        <field name="name">Printer</field>
+        <field name="res_model">printer</field>
+        <field name="view_mode">list,form</field>
+    </record>
+<!--         <menuitem id="it_inventory_menu"-->
+<!--              name="IT Inventory"-->
+<!--    />-->
+
+    <menuitem id="printer_root"
+              name="Printer"
+              parent="it_inventory_menu"
+              action="printer_model_action"
+    />
+
+</odoo>

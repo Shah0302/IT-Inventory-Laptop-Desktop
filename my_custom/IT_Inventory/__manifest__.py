@@ -11,6 +11,10 @@
         'views/laptop_views.xml',
         'views/desktop_views.xml',
         'views/attendance_machine_views.xml',
+        'views/cctv_views.xml',
+        'views/online_ups_views.xml',
+        'views/pabx_views.xml',
+        'views/printer_views.xml',
 ],
 'images': [],
 

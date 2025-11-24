@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Tree View -->
+    <record id="cctv_view_tree" model="ir.ui.view">
+        <field name="name">cctv.tree</field>
+        <field name="model">cctv</field>
+        <field name="arch" type="xml">
+            <list string="cctv" editable="bottom">
+                        <field name="count"/>
+                        <field name="serial"/>
+                        <field name="emp_id"/>
+                        <field name="fullname"/>
+                        <field name="unit"/>
+                        <field name="section"/>
+                        <field name="category"/>
+                        <field name="brand"/>
+                        <field name="model"/>
+                        <field name="configuration"/>
+                        <field name="xvr_nvr_serial"/>
+                        <field name="xvr_nvr_asset"/>
+                        <field name="xvr_nvr_IP"/>
+                        <field name="hostname"/>
+                        <field name="xvr_nvr_purchase_date"/>
+                        <field name="xvr_nvr_age"/>
+                        <field name="xvr_nvr_purchase_value"/>
+                        <field name="status"/>
+                        <field name="remarks"/>
+                        <field name="remarks2"/>
+
+            </list>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="cctv_model_action" model="ir.actions.act_window">
+        <field name="name">CCTV</field>
+        <field name="res_model">cctv</field>
+        <field name="view_mode">list,form</field>
+    </record>
+<!--         <menuitem id="it_inventory_menu"-->
+<!--              name="IT Inventory"-->
+<!--    />-->
+
+    <menuitem id="cctv_root"
+              name="CCTV"
+              parent="it_inventory_menu"
+              action="cctv_model_action"
+    />
+
+</odoo>

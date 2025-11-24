@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Tree View -->
+    <record id="online_ups_view_tree" model="ir.ui.view">
+        <field name="name">online_ups.tree</field>
+        <field name="model">online_ups</field>
+        <field name="arch" type="xml">
+            <list string="cctv" editable="bottom">
+                        <field name="count"/>
+                        <field name="serial"/>
+                        <field name="emp_id"/>
+                        <field name="fullname"/>
+                        <field name="unit"/>
+                        <field name="section"/>
+                        <field name="category"/>
+                        <field name="brand"/>
+                        <field name="model"/>
+                        <field name="configuration"/>
+                        <field name="online_ups_serial"/>
+                        <field name="online_ups_asset"/>
+                        <field name="online_ups_IP"/>
+                        <field name="hostname"/>
+                        <field name="online_ups_purchase_date"/>
+                        <field name="online_ups_age"/>
+                        <field name="online_ups_purchase_value"/>
+                        <field name="status"/>
+                        <field name="remarks"/>
+                        <field name="remarks2"/>
+
+            </list>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="online_ups_model_action" model="ir.actions.act_window">
+        <field name="name">Online UPS</field>
+        <field name="res_model">online_ups</field>
+        <field name="view_mode">list,form</field>
+    </record>
+<!--         <menuitem id="it_inventory_menu"-->
+<!--              name="IT Inventory"-->
+<!--    />-->
+
+    <menuitem id="online_ups_root"
+              name="Online UPS"
+              parent="it_inventory_menu"
+              action="online_ups_model_action"
+    />
+
+</odoo>

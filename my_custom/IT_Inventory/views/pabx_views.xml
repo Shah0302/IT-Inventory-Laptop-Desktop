@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Tree View -->
+    <record id="pabx_view_tree" model="ir.ui.view">
+        <field name="name">pabx.tree</field>
+        <field name="model">pabx</field>
+        <field name="arch" type="xml">
+            <list string="pabx" editable="bottom">
+                        <field name="count"/>
+                        <field name="serial"/>
+                        <field name="emp_id"/>
+                        <field name="fullname"/>
+                        <field name="unit"/>
+                        <field name="section"/>
+                        <field name="category"/>
+                        <field name="brand"/>
+                        <field name="model"/>
+                        <field name="configuration"/>
+                        <field name="pabx_serial"/>
+                        <field name="pabx_asset"/>
+                        <field name="pabx_IP"/>
+                        <field name="hostname"/>
+                        <field name="pabx_purchase_date"/>
+                        <field name="pabx_age"/>
+                        <field name="pabx_purchase_value"/>
+                        <field name="status"/>
+                        <field name="remarks"/>
+                        <field name="remarks2"/>
+
+            </list>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="pabx_model_action" model="ir.actions.act_window">
+        <field name="name">PABX</field>
+        <field name="res_model">pabx</field>
+        <field name="view_mode">list,form</field>
+    </record>
+<!--         <menuitem id="it_inventory_menu"-->
+<!--              name="IT Inventory"-->
+<!--    />-->
+
+    <menuitem id="pabx_root"
+              name="PABX"
+              parent="it_inventory_menu"
+              action="pabx_model_action"
+    />
+
+</odoo>
