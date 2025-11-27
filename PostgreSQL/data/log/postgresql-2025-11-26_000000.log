@@ -1,0 +1,25 @@
+2025-11-27 10:36:27.346 +06 [32388] ERROR:  could not serialize access due to concurrent update
+2025-11-27 10:36:27.346 +06 [32388] STATEMENT:  
+	            WITH last_cron_progress AS (
+	                SELECT id as progress_id, cron_id, timed_out_counter, done, remaining
+	                FROM ir_cron_progress
+	                WHERE cron_id = 13
+	                ORDER BY id DESC
+	                LIMIT 1
+	            )
+	            SELECT *
+	            FROM ir_cron
+	            LEFT JOIN last_cron_progress lcp ON lcp.cron_id = ir_cron.id
+	            WHERE ir_cron.active = true
+	              AND (nextcall <= (now() at time zone 'UTC')
+	                OR EXISTS (
+	                    SELECT cron_id
+	                    FROM ir_cron_trigger
+	                    WHERE call_at <= (now() at time zone 'UTC')
+	                      AND cron_id = ir_cron.id
+	                )
+	              )
+	              AND id = 13
+	            ORDER BY priority
+	            FOR NO KEY UPDATE SKIP LOCKED
+	        

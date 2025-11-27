@@ -6,6 +6,7 @@
 'category': 'All',
 'depends': ['base','web', 'contacts' ],
 'data': [
+        'data/serial_sequence.xml',
         'security/ir.model.access.csv',
         'views/it_inventory_views.xml',
         'views/laptop_views.xml',

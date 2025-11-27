@@ -6,7 +6,12 @@ class Desktop(models.Model):
 
     _name = "desktop"
     count = fields.Char(string='Count')
-    serial = fields.Char(string='Serial Number')
+    serial = fields.Char(
+        string='Serial Number',
+        readonly=True,
+        copy=False,
+        default="/"
+    )
     emp_id = fields.Char(string='ID')
     fullname = fields.Char(string='Full Name')
     email = fields.Char(string='Email IDs')
@@ -134,8 +139,7 @@ class Desktop(models.Model):
          tracking=True,
          default='draft')
 
-
-    @api.depends('desktop_purchase_date','moni_purchase_date')
+    @api.depends('desktop_purchase_date', 'moni_purchase_date', 'u_purchase_date')
     def _compute_device_age(self):
         today = fields.Date.today()
         for record in self:
@@ -151,3 +155,13 @@ class Desktop(models.Model):
                     return f"{years} years {months} months {days} days"
                 except Exception:
                     return "Invalid Date Format"
+
+            record.desktop_age = calc_age(record.desktop_purchase_date)
+            record.m_age = calc_age(record.moni_purchase_date)
+            record.ups_age = calc_age(record.u_purchase_date)
+
+    @api.model
+    def create(self, vals):
+        if not vals.get('serial') or vals.get('serial') == '/':
+            vals['serial'] = self.env['ir.sequence'].next_by_code('desktop.serial') or '/'
+        return super().create(vals)

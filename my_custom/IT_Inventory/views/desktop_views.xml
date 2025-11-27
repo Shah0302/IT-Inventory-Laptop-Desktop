@@ -29,7 +29,7 @@
         <field name="arch" type="xml">
             <list string="desktop" editable="bottom">
                         <field name="count"/>
-                        <field name="serial"/>
+                        <field name="serial" readonly="1"/>
                         <field name="emp_id"/>
                         <field name="fullname"/>
                         <field name="email"/>

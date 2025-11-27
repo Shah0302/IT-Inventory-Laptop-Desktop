@@ -63,7 +63,6 @@ class attendance_machine(models.Model):
          tracking=True,
          default='draft')
 
-
     @api.depends('attendance_machine_purchase_date')
     def _compute_device_age(self):
         today = fields.Date.today()
@@ -80,3 +79,6 @@ class attendance_machine(models.Model):
                     return f"{years} years {months} months {days} days"
                 except Exception:
                     return "Invalid Date Format"
+
+            record.attendance_machine_age = calc_age(record.attendance_machine_purchase_date)
+
